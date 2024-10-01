@@ -9,17 +9,20 @@
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent page scroll */
         }
         .background {
             background-image: url('home.png');
             height: 100%;
+            width: 100%;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain; /* Make the image flexible and fit within the viewport */
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
+            overflow: auto; /* Enable scrolling if the image is larger than the window */
         }
         .button {
             background-color: #4CAF50; /* Green */
